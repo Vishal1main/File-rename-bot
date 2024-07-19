@@ -3,21 +3,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "27696177")
+    API_HASH  = os.environ.get("API_HASH", "0c44906a4feff3b947db76dfa7c57d88")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7398590079:AAH1Yai7B7AoOMsEB8HrQ9kkSiQYHs6aGAY") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","techvjautobot")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://tabolo8539:0evqZDV4fC5fD17c@cluster0.cw8zxus.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AshutoshGoswami24,BotzPW').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'https://t.me/TMR_update_channel').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002021784050"))
     PORT = int(os.environ.get("PORT", ""))
     
     # wes response configuration     
